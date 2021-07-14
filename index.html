@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pricing</title>
+  </head>
+  <body>
+    <h1>Pricing</h1>
+    <section class="card">
+      <div class="signature sole">
+        <div class="price">
+          <h3>Sole Proprietor</h3>
+          <h2>$19.99</h2>
+          <span>per month</span>
+        </div>
+        <div class="text">
+          <p>100 invoices</p>
+          <p>Custom scripting & scheduling</p>
+          <p>Payment & accounting software integration</p>
+          <div class="button">
+            <a href="#">Start Free Trial</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="signature small">
+        <div class="price">
+          <h3>Small Business</h3>
+          <span>Most Popular</span>
+          <h2>$49.99</h2>
+          <span>per month</span>
+        </div>
+        <div class="text">
+          <p>300 invoices</p>
+          <p>Custom scripting & scheduling</p>
+          <p>Payment & accounting software integration</p>
+          <div class="button">
+            <a href="#">Start Free Trial</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="signature enterprise">
+        <div class="price">
+          <h3>Enterprise</h3>
+          <h2>$99.99</h2>
+          <span>per month</span>
+        </div>
+        <div class="text">
+          <p>500 invoices</p>
+          <p>Custom scripting & scheduling</p>
+          <p>Payment & accounting software integration</p>
+          <div class="button">
+            <a href="#">Start Free Trial</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector('.signature'), {
+        max: 15,
+        speed: 200
+      })
+
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll('.signature'))
+    </script>
+  </body>
+</html>

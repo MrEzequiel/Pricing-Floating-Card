@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Poppins', sans-serif;
+  line-height: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+
+  margin: 20px 0 60px 0;
+}
+
+.card {
+  width: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.signature {
+  display: grid;
+  grid-area: ('price', 'description');
+  grid-template-columns: 'price' 'description';
+
+  background: #ffffff2f;
+  border: 1px solid rgba(0, 0, 0, 0.055);
+  border-radius: 0 0 5px 5px;
+  padding: 25px;
+
+  min-height: 400px;
+  max-width: 350px;
+}
+
+.signature .price {
+  align-self: flex-start;
+}
+
+.signature .price h3 {
+  margin-bottom: 30px;
+}
+
+.signature .price h3 + span {
+  display: block;
+  margin-top: -30px;
+  margin-bottom: 10px;
+
+  font-weight: 300;
+  color: #50bc01;
+}
+
+.signature .price h2 {
+  font-weight: 300;
+  color: #5caefe;
+
+  font-size: 34px;
+}
+
+.signature .price h2 + span {
+  display: block;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.signature .text {
+  align-self: flex-end;
+}
+
+.signature .text p {
+  margin: 10px 0;
+}
+
+.signature .text .button {
+  margin-top: 50px;
+}
+
+.signature .text .button a {
+  background: #5caefe;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+
+  padding: 10px 20px;
+}
+
+.signature.small {
+  background: #fff;
+
+  margin: 0 20px;
+  border-top: 5px solid #50bc01;
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 1100px) {
+}
